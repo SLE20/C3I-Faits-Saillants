@@ -474,3 +474,90 @@ button:focus-visible {
     line-height: 1.4;
     letter-spacing: 0;
 }
+
+/* Identité C3I : dimensions communes */
+
+.c3i-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding: 0;
+    text-align: center;
+}
+
+.c3i-brand img {
+    display: block;
+    width: 100px !important;
+    height: 100px !important;
+    max-width: 100px !important;
+    max-height: 100px !important;
+    object-fit: contain;
+    border-radius: 50%;
+    background: white;
+}
+
+.c3i-brand-title {
+    color: #10243a;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.c3i-brand-subtitle {
+    color: #856323;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Couleurs du menu latéral */
+
+.navbar-vertical .c3i-brand-title {
+    color: white;
+}
+
+.navbar-vertical .c3i-brand-subtitle {
+    color: #d7b56d;
+}
+
+/* Page de connexion */
+
+body:has(form[action$="/admin/login"]) {
+    background: #f3f6fa !important;
+}
+
+body:has(form[action$="/admin/login"]) .page-center {
+    padding: 28px 16px;
+}
+
+body:has(form[action$="/admin/login"]) .container,
+body:has(form[action$="/admin/login"]) .container-tight {
+    width: 100%;
+    max-width: 440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body:has(form[action$="/admin/login"]) .c3i-brand {
+    margin-bottom: 18px;
+}
+
+body:has(form[action$="/admin/login"]) .card {
+    border-top: 4px solid #d7b56d;
+    border-radius: 14px;
+    box-shadow: 0 12px 35px rgba(16, 36, 58, 0.08);
+}
+
+body:has(form[action$="/admin/login"]) .card-body {
+    padding: 28px;
+}
+
+body:has(form[action$="/admin/login"]) .form-control {
+    min-height: 44px;
+}
+
+@media (max-width: 480px) {
+    body:has(form[action$="/admin/login"]) .card-body {
+        padding: 22px;
+    }
+}

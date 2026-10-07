@@ -27,7 +27,11 @@
     :link="backpack_url('recherche')"
 />
 
-
+<x-backpack::menu-item
+    title="Graphiques"
+    icon="la la-bar-chart"
+    :link="backpack_url('graphiques')"
+/>
 
 <x-backpack::menu-item
     title="Carte des faits"

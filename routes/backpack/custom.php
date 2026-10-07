@@ -34,6 +34,11 @@ Route::group([
     \App\Http\Controllers\Admin\IncidentMapController::class,
     'index',
 ])->name('c3i.incidents.map');
+
+    Route::get('graphiques', [
+    \App\Http\Controllers\Admin\IncidentChartsController::class,
+    'index',
+])->name('c3i.incidents.charts');
 }); // this should be the absolute last line of this file
 
 /**
